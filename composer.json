@@ -1,0 +1,23 @@
+{
+    "name": "ehsan_coder/neshan-laravel",
+    "description": "Easy-to-use SDK for implementing Neshan RestFull web APIs in your Laravel projects.",
+    "keywords": ["neshan", "neshan laravel", "neshan API", "map laravel"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ehsan Shafiei",
+            "email": "msc.shafiei@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EhsanCoder\\NeshanLaravel\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.5,<8.2",
+        "laravel/framework": ">=7.0,<9.29"
+    }
+}
