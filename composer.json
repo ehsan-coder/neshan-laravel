@@ -19,5 +19,12 @@
     "require": {
         "php": ">=7.2.5,<8.2",
         "laravel/framework": ">=7.0,<9.29"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EhsanCoder\\NeshanLaravel\\src\\NeshanServiceProvider"
+            ]
+        }
     }
 }
