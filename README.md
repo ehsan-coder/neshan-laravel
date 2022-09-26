@@ -15,18 +15,21 @@
 <br>
     
 ## Install    
- The easiest way to install is by using Composer:
+> The easiest way to install is by using Composer:
   
-```php
-composer require ehsan-coder/neshan-laravel
+```shell script
+composer require ehsan_coder/neshan-laravel
 ```    
-Composer is a dependency manager for PHP which allows you to declare the libraries your project depends on, and it will manage (install/update) them for you.  If you are not familiar with Composer, you can read its documentations and download it via [getcomposer.org](https://getcomposer.org/).
+***
+> Composer is a dependency manager for PHP which allows you to declare the libraries your project depends on, and it will manage (install/update) them for you.  If you are not familiar with Composer, you can read its documentations and download it via [getcomposer.org](https://getcomposer.org/).
 
-## configuration .env file    
-add account information into .env file
-    
-    NESHAN_API_KEY=your neshan api key
+## configuration `.env` file    
+> add account information into `.env` file
 
+```shell script
+NESHAN_API_KEY=your neshan api key
+```
+***
  ## usage    
 To use the package, you need an API key. To get that you should have a [Neshan](https://neshan.org/) account. Register and get your API key.
 <br>
@@ -34,15 +37,15 @@ Use `NeshanFacade` on top of your controller or wherever you want:
 ```php
 use EhsanCoder\NeshanLaravel\NeshanFacade;
 ```
-all APIs of Neshan exist in this Facade! for example to use ` distanceMatrix` API we can use:
+> all APIs of Neshan exist in this Facade! for example to use `distanceMatrix` API we can use:
 ```php
-$response = NeshanFacade::distanceMatrix($origins, $destinations, $timeout = 10);
+$response = EhsanCoder\NeshanLaravel\NeshanFacade::distanceMatrix($origins, $destinations, $timeout = 10);
 ```    
 
-####forExample
+### for Example
 
 ```php
-$response = NeshanFacade::distanceMatrix('36.279589071020425,50.00901454609652','38.279589071020425,51.00901454609652');
+$response = EhsanCoder\NeshanLaravel\NeshanFacade::distanceMatrix('36.279589071020425,50.00901454609652','38.279589071020425,51.00901454609652');
 ```  
  ## Parameters
  | Parameter | Required | Description | Type | Example |
