@@ -8,6 +8,10 @@
         {
             "name": "Ehsan Shafiei",
             "email": "msc.shafiei@gmail.com"
+        },
+         {
+            "name": "Omid Mehri",
+            "email": "thehopeofiran@gmail.com"
         }
     ],
     "autoload": {
