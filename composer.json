@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "EhsanCoder\\NeshanLaravel\\src\\NeshanServiceProvider"
+                "EhsanCoder\\NeshanLaravel\\NeshanServiceProvider"
             ]
         }
     }
