@@ -39,17 +39,18 @@ use EhsanCoder\NeshanLaravel\NeshanFacade;
 ```
 > all APIs of Neshan exist in this Facade! for example to use `distanceMatrix` API we can use:
 ```php
-$response = EhsanCoder\NeshanLaravel\NeshanFacade::distanceMatrix($origins, $destinations, $timeout = 10);
+$response = EhsanCoder\NeshanLaravel\NeshanFacade::distanceMatrix($origins, $destinations, $type, $timeout = 10);
 ```    
 
 ### for Example
 
 ```php
-$response = EhsanCoder\NeshanLaravel\NeshanFacade::distanceMatrix('36.279589071020425,50.00901454609652','38.279589071020425,51.00901454609652');
+$response = EhsanCoder\NeshanLaravel\NeshanFacade::distanceMatrix('36.279589071020425,50.00901454609652','38.279589071020425,51.00901454609652', EhsanCoder\NeshanLaravel\NeshanAPI::DISTANCE_MATRIX_CAR_TYPE);
 ```  
  ## Parameters
  | Parameter | Required | Description | Type | Example |
  | --- | --- | --- | --- | --- |
  | $origins | Yes | all origins! every origin must separated by pipe character | string | 36.279589071020425,50.00901454609652 |
  | $destinations |  Yes | same of origins parameter| string | 38.279589071020425,51.00901454609652 |
+ | $type | No | default value is car | string | car |
  | $timeout | No | default value of timeout is 5 sec | int | 10 |

@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Http;
 
 class NeshanAPI
 {
+    const DISTANCE_MATRIX_MOTORCYCLE_TYPE = 'motorcycle';
+    const DISTANCE_MATRIX_CAR_TYPE        = 'car';
     protected $apiKey;
     private $url;
 
